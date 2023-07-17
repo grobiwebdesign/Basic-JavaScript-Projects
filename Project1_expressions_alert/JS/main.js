@@ -11,7 +11,7 @@
 //+ " Dolly Parton") + " - 2014";
 //document.write(B)
 
-//var fAmily = "Houston", fAther = "John", mOther = "Cissy", dAughter = "Whitney";
-//document.write(dAughter);
+var fAmily = "Houston", fAther = "John", mOther = "Cissy", dAughter = "Whitney";
+document.write(dAughter);
 
-document.write(9 + 18);
+//document.write(9 + 18);

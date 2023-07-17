@@ -14,4 +14,4 @@
 //var fAmily = "Houston", fAther = "John", mOther = "Cissy", dAughter = "Whitney";
 //document.write(dAughter);
 
-document.write(9 + 9);
+document.write(9 + 18);

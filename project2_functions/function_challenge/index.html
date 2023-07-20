@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	#block{
+
+		min-height: 100px;
+		max-width: 100px;
+		background-color: red;
+
+	}
+</style>
+</head>
+<body>
+	<div id="block"></div>
+
+	The square above is actually hardcoded red. It has been changed to blue via the getElementById method.
+		
+</body>
+<script type="text/javascript">
+
+	const mySquare = document.getElementById("block");
+	mySquare.style.backgroundColor = "blue";
+
+</script>
+</html>

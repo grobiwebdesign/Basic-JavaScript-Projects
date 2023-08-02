@@ -7,23 +7,19 @@ document.write(typeof X);
 // string with number
 document.write("10" + 5);
 
-// document.write( 10 > 4 );
-
-// console.log( 5 < 4 );
-
-//document.getElementById("demo").innerHTML = isNaN('not a number');
-
 // Initate is-equal-to ( == ) operator
 document.write( 41 == 41 );
 
-/*
+// Initiate equal value and equal type ( === )operator
 X = 10
 Y = "Four"
 document.write(X === Y);
-*/
 
-// Initiate a greater than ( > ) and OR ( || ) operator 
-document.write(5 > 10 || 10 > 20);
+// Initiate a greater than ( < ) and AND ( && )operator
+document.write( 41 > 4 && 62 > 7 )
+
+// Initiate a less than ( < ) and OR ( || ) operator 
+document.write(5 < 10 || 10 < 20);
 
 // Initiate locigal NOT ( ! ) operator
 function not_function(){

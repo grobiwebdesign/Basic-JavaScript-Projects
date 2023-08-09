@@ -8,19 +8,32 @@ body{
 	color: ghostwhite;
 }
 
+/* Slideshow Interface */
+
 .section{
 	width: 100%;
 	min-height: 50px;
 	padding: 3rem 1.5rem;
 }
 
+.container{
+	max-width: 600px;
+}
+
+/* User friendly controls  */
+
 .button{
 	padding: 0.5rem;
 	font-size: 1rem;
+	cursor: pointer;
 }
 
-/* Slideshow Interface */
+/* Hide images by default  */
 
 .slide{
 	display: none;
+}
+
+.numbers{
+	text-align: right;
 }

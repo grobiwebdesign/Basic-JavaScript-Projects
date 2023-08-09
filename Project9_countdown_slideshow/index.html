@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="Style/style.css">
+</head>
+<body>
+
+<section class="section">
+	<div class="container">
+
+		<p>How many seconds would you like to set your alarm for?</p>
+
+		<input id="seconds" value=""/>
+		<button onclick="countDown()">Set timer</button>
+		<p id="timer"></p>
+	</div>
+</section>
+
+<h3>Slideshow Challenge</h3>
+
+<section class="section">
+	<div class="container">
+		<!-- slide 1 -->
+		<div class="slide">
+			<img src="Style/images/cars/car1.jpg">
+			<h3>AC Cobra</h3>
+			<div class="numbers">
+				1/3
+			</div>
+		</div>
+		<!-- slide 2 -->
+		<div class="slide">
+			<img src="Style/images/cars/car2.jpg">
+			<h3>MGB ROADSTER 1979</h3>
+			<div class="numbers">
+				2/3
+			</div>
+		</div>
+		<!-- slide 3 -->
+		<div class="slide">
+			<img src="Style/images/cars/car3.jpg">
+			<h3>Chevrolet Chevelle 1971</h3>
+			<div class="numbers">
+				3/3
+			</div>
+		</div>
+	</div>
+	<button class="button" onclick="arrowButton(-1)"><</button>
+	<button class="button" onclick="arrowButton(1)">></button>
+</section>	
+
+<script src="JS/main.js"></script>
+</body>
+</html>

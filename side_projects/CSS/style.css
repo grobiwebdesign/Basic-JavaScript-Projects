@@ -1,0 +1,28 @@
+#jsTestForm{
+	border: 1px solid black;
+	width: 500px;
+	padding: 24px;
+	margin: 12px;
+}
+
+.input_control{
+	padding: 4px;
+}
+
+.input_control input{
+	width: 100%;
+	margin: 2px;
+	padding: 4px;
+}
+
+.input_control.success input {
+	border-color: seagreen;
+}
+
+.input_control.error input{
+	border-color: #800020;
+}
+
+.input_control .error{
+	color: #800020;
+}

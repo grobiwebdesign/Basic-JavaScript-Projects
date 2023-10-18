@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Data Attribute Assignment</title>
+	<script src="JS_1/JavaScript_3.JS" defer></script>
+</head>
+<body>
+	<section>
+		<h3>Ordered list</h3>
+			<ol>
+				<li data-food_category="Meat">Beef</li>
+				<li data-food_category="Turnip">Vegetable</li>
+				<li data-food_category="Dairy">Milk</li>
+			</ol>
+	</section>
+	<section>
+		<h3>Click the items in the list below to see the product categories</h3>
+			<ul>
+				<li onclick="displayType(this)" id="Beef" data-food-type="Meat">M</li>
+				<li onclick="displayType(this)" id="Vegetable" data-food-type="Turnip">V</li>
+				<li onclick="displayType(this)" id="Dairy" data-food-type="Milk">D</li>
+			</ul>
+	</section>
+
+</body>
+</html>

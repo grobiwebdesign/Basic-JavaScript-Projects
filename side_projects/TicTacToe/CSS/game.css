@@ -25,9 +25,13 @@ td {
 	filter: contrast(3);
 }
 
+td:hover{
+	background-color: yellow;
+}
+
 canvas {
 	position: absolute;
-	border-style: 1px solid black;
+	border: 1px solid black;
 	z-index: 10;
 	pointer-events: none;
 }

@@ -22,18 +22,17 @@ function placeXOrO(squareNumber) {
 		}
 		// Concatinate squareNumber and activePlayer together, add to array
 		selectedSquares.push(squareNumber + activePlayer);
-	}
+	
 	// Call function to check for a win condition
 	checkWinCondition();
 	// Change active player
 	if (activePlayer === 'X') {
 		// if active player is X, change to 0
 		activePlayer = 'O';
+		} else
 		// if active player is anything other than 'X'
 		activePlayer = 'X';
-	}
-
-	//play placement sound
+		//play placement sound
 	audio('./media/place.mp3');
 	// check for computer's turn
 	if (activePlayer === 'O') {
@@ -42,7 +41,12 @@ function placeXOrO(squareNumber) {
 		// wait 1 second for computer's turn
 		setTimeout(function () { computerTurn(); }, 1000);
 	}
+
 	return true;
+	}
+
+	
+}
 	// computer choses random square
 	function computerTurn() {
 		// boolean required for while loop
@@ -62,7 +66,7 @@ function placeXOrO(squareNumber) {
 
 		}
 	}
-}
+
 // function to parse the selected squares array to search for win condition
 	function checkWinCondition() {
 	if ( arrayIncludes('0X', '1X', '2X') ) { drawWinLine(50,100,558,100) }
@@ -98,7 +102,7 @@ function placeXOrO(squareNumber) {
 
 function disableClick(){
 	body.style.pointerEvents = 'none';
-	setTimeout(function () {body.style.pointerEvents = auto;},1000);
+	setTimeout(function () {body.style.pointerEvents = 'auto';},1000);
 }
 
 function audio(audioURL) {

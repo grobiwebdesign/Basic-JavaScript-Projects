@@ -1,0 +1,112 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background-color: darkred;
+}
+
+.header{
+	background-image: url("../imgs/pizzaBG.jpg"); /* The image used */
+	background-color: #cccccc; /* Used if the image is unavailable */
+	min-height: 50px; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	text-align: center;
+	padding: 5rem 3.5rem;
+}
+
+.title{
+	font-size: 3.5rem;
+	font-weight: 800;
+	color: black;
+}
+
+h3{
+	font-size: 2rem;
+	font-weight: 300;
+	color: sandybrown;
+	margin-bottom: 20px;
+}
+
+
+#menuBG {
+	width:500px;
+	height:570px;
+	margin:10px auto;
+}
+
+.menu{
+	background-color: ghostwhite;
+	padding: 20px 40px 20px 24px;
+	border-radius: 0.375em;
+	line-height: 27px;
+	margin-bottom: 24px;
+	font-size: 1.2rem;
+}
+
+.menu input{
+	margin-right: 8px;
+}
+
+#frmMenu {
+	width:800px;
+	height:200px;
+}
+
+#totalPrice {
+	width: 200px;
+	height: 190px;
+	margin: 0 auto;
+	float: right;
+}
+
+.left {
+	width:200px;
+	height:230px;
+	float:left;
+	}
+
+.center {
+	width:200px;
+	height:230px;
+	float:left;
+	}
+	
+.right {
+	width:200px;
+	height:230px;
+	float:right;
+	}
+
+
+#showText {
+	width: 200px;
+	height: 190px;
+	margin: 0px auto;
+	float: left;
+}
+
+#cart {
+	top:0;
+	margin: 0px auto;
+	width: 400px;
+	height: 200px;
+}
+
+#btnOrder{
+	border-width: 1px;
+	border-radius: 6px;
+	line-height: 24px;
+	margin-bottom: 8px;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.5em - 1px);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: calc(0.5em - 1px);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style/lightbox.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalnia:wght@200&family=Open+Sans:wght@300;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+	<h1>Lightbox</h1>
+<!-- Preview Images -->
+<div class="row">
+  <div class="column">
+    <img src="imgs/plants/plant1-small.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="imgs/plants/plant2-small.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="imgs/plants/plant3-small.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="imgs/plants/plant4-small.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div id="lightBox" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="number_order">1 / 4</div>
+      <img src="imgs/plants/plant1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="number_order">2 / 4</div>
+      <img src="imgs/plants/plant2.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="number_order">3 / 4</div>
+      <img src="imgs/plants/plant3.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="number_order">4 / 4</div>
+      <img src="imgs/plants/plant4.png" style="width:100%">
+    </div>
+
+    <!-- arrow controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="column">
+      <img class="demo" src="imgs/plants/plant1-small.png" onclick="currentSlide(1)" alt="Cherry Blossom">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="imgs/plants/plant2-small.png" onclick="currentSlide(2)" alt="Sunflower">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="imgs/plants/plant3-small.png" onclick="currentSlide(3)" alt="Echeveria Elegans">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="imgs/plants/plant4-small.png" onclick="currentSlide(4)" alt="Fittonia">
+    </div>
+  </div>
+</div>
+<script src="JS/one-page-website.js"></script>
+</body>
+</html>

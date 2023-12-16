@@ -22,10 +22,11 @@ function getReceipt() {
 		sizeTotal = 16;
 	}
 	runningTotal = sizeTotal;
+// All three of these variables will be passed on to each function
 	console.log(selectedSize+" = $"+sizeTotal+".00");
 	console.log("size text1: "+text1);
 	console.log("subtotal: $"+runningTotal+".00");
-	getTopping(runningTotal,text1); // All three of these variables will be passed on to each function
+	getTopping(runningTotal,text1); 
 };
 
 function getTopping(runningTotal,text1) {

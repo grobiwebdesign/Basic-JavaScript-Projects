@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Basic AJAX Demo</title>
+		<link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<!-- Ajax assignment-->
+        <div class="main">
+        	<h1>Basic Ajax Demo</h1>
+			<h2>Click the button to recieve a live update:</h2>
+			<div class='content' id="content">
+				<input type="button" class="button" value="Get Content" id="btn_content" onclick="getContent();" />
+			</div>
+
+		<script type="text/javascript">
+
+// establish xml http request
+
+			var aJax = new XMLHttpRequest();
+
+// prepare open ajax request
+
+			aJax.open('GET', 'content.html');
+
+// define ajax response callback method
+
+			aJax.onreadystatechange = function() {
+				if ( aJax.readyState == 4 ) {
+					document.getElementById('content').innerHTML = aJax.responseText;
+				}
+			}
+// send ajax request for data, also hides button
+			function getContent() {
+				aJax.send();
+				document.getElementById('btn_content').style.display='none';
+			} 
+
+		</script>
+    </body>
+</html>

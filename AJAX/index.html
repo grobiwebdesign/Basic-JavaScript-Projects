@@ -24,7 +24,7 @@
 
 			aJax.open('GET', 'content.html');
 
-// define ajax response callback method
+// define ajax response callback method. OnReadyStateChange means to talk to the server. responseText property is a string sent by the server
 
 			aJax.onreadystatechange = function() {
 				if ( aJax.readyState == 4 ) {

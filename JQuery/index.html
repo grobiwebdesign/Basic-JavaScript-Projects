@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JQuery Assignment</title>
+	<!-- JQuery CDN, latest version-->
+	<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<h3>Introduction to JQuery</h3>	
+	<script>
+// Allow the document to load before running jQuery.
+		$(document) .ready(function() {
+// Selects a HTML element to "append" content
+			$("html") .append(
+// Content in HTML element
+				"<body>\
+					<div id='container'>\
+						<div id='inner'>\
+							<h1>Basic JQuery</h1>\
+								<p id='1'>Paragraph 1</p>\
+								<p id='2'>Paragraph 2</p>\
+								<p id='3'>Paragraph 3</p>\
+						</div>\
+					</div>\
+				</body>"
+		);
+// Using jQuery to style p id="2" 
+			$( "#2" ).css({"color":"red"}) ;
+// Create "click" event to hide H1 element when paragraph 3 is clicked on.
+			$( "#3" ).click(function() {
+				console.log( "The header is hiding" ), $("h1") .fadeOut( 300 );
+			});
+		});
+
+	</script>
+
+<p>Clicking on Paragraph 3 will make trigger an event response with a gentle fade out effect.</p>
+
+</html>

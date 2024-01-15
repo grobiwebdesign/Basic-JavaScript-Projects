@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML DOM Documents</title>
+</head>
+<body>
+	
+	<h1>Elements Challenge</h1>
+	<h3>Task to utilise an element property as covered on W3Schools page on <a href="https://www.w3schools.com/jsref/dom_obj_document.asp">HTML Documents</a> </h3>
+
+	<p id="demo"></p>
+
+<script>
+let task = document.defaultView;
+document.getElementById("demo").innerHTML = task;
+</script>
+
+<p>The ["object window"] demo you are seeing is a return of the window object associated with this document. Will read "Null" if none is available</p>
+
+</body>
+</html>

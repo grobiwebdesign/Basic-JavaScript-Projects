@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>React Assignment 2</title>
+		<!-- react cdn -->
+	<script src="https://fb.me/react-0.14.3.js"></script>
+	<script src="https://fb.me/react-dom-0.14.3.js"></script>
+</head>
+<body>
+
+	<div id="like_button_container"></div>
+
+<script>
+	const X = React.createElement;
+
+	class likeButton extends React.Component {
+		constructor(props) {
+			super(props);
+			this.state = { liked: false };
+		}
+
+		render() {
+			if (this.state.liked) {
+				return 'Yes to likes';
+			}
+
+			return X(
+				'button',
+				{ onClick: () => this.setState({ liked: true }) },
+				'Like'
+				);
+		}
+	}
+
+	const domContainer = document.querySelector('#like_button_container');
+	ReactDOM.render(X(likeButton), domContainer);
+</script>
+</body>
+</html>

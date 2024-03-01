@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- react cdn -->
+<script src="https://fb.me/react-0.14.3.js"></script>
+<script src="https://fb.me/react-dom-0.14.3.js"></script>
+</head>
+<body>
+<div id="My_Reaction"></div>
+
+<script>
+	var Timer = React.createClass({
+		render: function() {
+			var time_Passed = Math.round(this.props.time_Passed / 100);
+			var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0');
+			var text = 'React Code started ' + seconds_Passed + ' seconds ago';
+			return React.DOM.p(null, text);
+		}
+	});
+
+	var counter_Factory = React.createFactory(Timer);
+
+	var start_Counting = new Date().getTime();
+	setInterval(function() {
+		ReactDOM.render(
+			counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+			document.getElementById('My_Reaction')
+			);
+	}, 50);
+</script>
+</body>
+</html>
+
